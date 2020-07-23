@@ -31,7 +31,7 @@
         }); */
 
         $.getJSON("http://localhost:8081/post", function(resp) {
-            var feat = resp.raw_data, tableData = [];
+            var feat = resp, tableData = [];
             
             // Iterate over the JSON object
              for (var j = 0, len = feat.length; j < len; j++) { 
